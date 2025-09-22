@@ -1,5 +1,5 @@
 
-archivo = "/content/GCA_000001405.15_GRCh38.fna"
+archivo = "GCA_000001405.15_GRCh38_full_analysis_set.fna"
 kmer = 12
  
 # Tabla de complemento para A C T G
