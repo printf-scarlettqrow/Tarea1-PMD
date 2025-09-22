@@ -1,5 +1,5 @@
 
-archivo = "GCA_000001405.15_GRCh38.fna"
+archivo = "/content/GCA_000001405.15_GRCh38.fna"
 kmer = 10
 
 # Tabla de complemento para A C T G
