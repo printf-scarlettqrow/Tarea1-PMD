@@ -1,3 +1,11 @@
+import psutil
+import os
+
+def memoria():
+    proceso = psutil.Process(os.getpid())
+    memoria = proceso.memory_info().rss / 1024
+    return memoria
+
 
 archivo = "GCA_000001405.15_GRCh38_full_analysis_set.fna"
 kmer = 12
@@ -69,3 +77,5 @@ items = sorted(hist.items(), key=lambda kv: (-kv[1], kv[0]))
 for i, j in items:
     print(f"{i} {j}")
 items = sorted(hist.items(), key=lambda kv: (-kv[1], kv[0]))
+
+print(f"Memoria después de ejecutar: {memoria()} KB")
