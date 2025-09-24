@@ -66,5 +66,5 @@ hist = histograma(conteo, 100)
 items = sorted(hist.items(), key=lambda kv: (-kv[1], kv[0]))
 
 # Printear
-for i, j in items[:10]:
+for i, j in items:
     print(f"{i} {j}")
